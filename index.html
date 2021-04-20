@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloIndex.css">
+    <title>CRUD-Agenda</title>
+</head>
+<body>
+    <header class="header"><h1 class="titulo">Agenda de contatos</h1></header>
+    <div class="menu">
+            <button class="botao-menu"><a class="textobtn" href="#">Incluir</a></button>
+            <button class="botao-menu"><a class="textobtn" href="#">Alterar</a></button>
+            <button class="botao-menu"><a class="textobtn" href="#">Excluir</a></button>
+            <button class="botao-menu"><a class="textobtn" href="#">Consultar</a></button>
+            <button class="botao-menu"><a class="textobtn" href="#">Sair</a></button>
+    </div>
+
+    <div class="formulario">
+    <form class="campos" action="index.html" method="POST">
+        <h2 class="titulo">Preencha os dados</h2>
+        <input type="text" name="" placeholder="Nome">
+        <input type="text" name="" placeholder="Sobrenome" required>
+        <label class="nascimento" for="nascimento">Data de nascimento
+        <input type="date" id="nascimento" name="datadenascimento">
+        </label>
+        <label class="genero" for="genero">Gênero
+            <select name="genero" id="genero">
+                <option selected disabled>Escolha</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="naobinario">Não-Binário</option>
+            </select>
+        </label>
+        <h3 class="titulo">Endereço</h3>
+        <div class="tipo-endereco">
+            <label for="rua">
+                <input type="radio" id="rua"name="tipoendereco" value="rua">
+                Rua</label>
+            <label for="avenida">
+                <input type="radio" id="avenida" name="tipoendereco" value="avenida">
+                Avenida</label>
+        </div>
+        <div class="info-endereco">
+            <input type="text" name="" placeholder="Nome da rua" required>
+            <input type="text" name="" placeholder="Complemento">
+        </div>
+        <button class="botaoenviar" type="submit">Enviar</button>
+    </form>
+    </div>
+    <a class="proximapagina" href="pagina02.html"><img class="seta" src="img/pngwing.com.png"></a>
+    
+</body>
+</html>
